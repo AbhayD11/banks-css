@@ -1,0 +1,344 @@
+.bank-list-container  {
+  display: flex;
+  margin-top: 4px;
+}
+
+.bank-container.no-balance {
+  margin-top: 10px;
+}
+
+.bank-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.bank-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.bank-icon.has-balance {
+  margin-top: 7px;
+}
+
+.bank-name {
+  font-weight: 600;
+}
+
+.account-number {
+  font-size: 16px;
+  color: #666;
+  margin-left: 34px;
+  margin-top: -2px;
+}
+
+.bank-balance {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bank-balance.no-balance {
+  margin-top: 10px;
+}
+
+.balance-date {
+  font-size: 14px;
+  color: #999;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.excess-balance-chart-container {
+  width: 200px; 
+     height: 200px; 
+     position: absolute;
+     right: 3%;
+     top: 55%;
+     transform: translateY(-50%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: transparent; /* No background color for blending */
+ }
+ canvas {
+     width: 100% !important;
+     height: 100% !important;
+ }
+   .amount-to-keep-in-bank {
+     display: flex;
+      align-items: center;
+       justify-content: space-between;
+        margin-bottom: 15px; 
+        margin-top: 60px; 
+        width: 600px; 
+        padding: 10px 20px;
+     }
+        .amount-to-keep-left-section {
+display: flex;
+align-items: flex-start;
+}
+
+.amount-to-keep-icon {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: #e3dbdb;
+display: inline-block;
+margin-right: 20px;
+margin-left: 10px;
+margin-top: 5px;
+}
+
+.amount-to-keep-text {
+display: flex;
+flex-direction: column;
+}
+
+.amount-to-keep-title {
+font-size: 22px;
+font-weight: bold;
+color: #4a4545;
+}
+
+.amount-to-keep-description {
+font-size: 20px;
+color: #666;
+margin-top: 5px;
+}
+
+.amount-to-keep-right-section{
+font-size: 22px; 
+font-weight: 700; 
+color: #333;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.excess-balance {
+display: flex;
+align-items: center;
+border-radius: 15px;
+justify-content: space-between;
+margin-bottom: 20px;
+background-color: #EAF4F4;
+margin-top: 60px;
+padding: 10px 20px;
+height: 120px;
+}
+
+.excess-balance-left-section {
+display: flex;
+align-items: flex-start;
+}
+
+.excess-balance-icon {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+display: inline-block;
+margin-right: 20px;
+margin-left: 10px;
+margin-top: 5px;
+}
+
+.excess-balance-title {
+font-size: 22px;
+font-weight: bold;
+color: #4a4545;
+}
+
+.excess-balance-description {
+font-size: 20px;
+color: #666;
+margin-top: 5px;
+}
+
+.excess-balance-right-section {
+font-size: 22px;
+font-weight: 700;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.advice-section {
+display: flex;
+align-items: center;
+padding: 25px;
+background-color: #fff;
+border-radius: 20px;
+margin-top: 80px;
+border: 0.5px solid #ddd;
+}
+
+.advice-section-icon {
+background-color: #d0eceb;
+color: #0D9170;
+border-radius: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 60px;
+height: 60px;
+font-size: 24px;
+font-weight: bold;
+margin-right: 20px;
+}
+
+.advice-section-title {
+font-size: 20px;
+font-weight: bold;
+color: #333;
+}
+
+.advice-section-description {
+font-size: 16px;
+color: #666;
+margin-top: 10px;
+}
+
+
+.effective-utilization-bank-balance-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.effective-utilization-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: black;
+}
+
+.effective-utilization-description {
+  font-size: 34px;
+  font-weight: 500;
+  color: grey;
+  margin-top: 20px;
+}
+
+.effective-utilization-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 20px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.effective-utilization-grid-1 .grid-item-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  margin-top: 133px;
+  margin-right: -40px;
+  overflow: hidden;
+  border-right: none;
+  font-size: 24px;
+}
+
+.effective-utilization-grid-1 .grid-item-1 .header {
+  height: 60px;
+  text-align: left;
+  padding: 20px;
+  border-bottom: 0.1px solid #f0f5f4;
+  font-weight: 600;
+  color: rgb(87, 83, 83);
+  line-height: 1.5;
+}
+
+.effective-utilization-grid-1 .grid-item-1 .subtext {
+  font-size: 20px;
+  color: rgb(133, 127, 127);
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.effective-utilization-grid-1 .grid-item-1 .body {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 20px;
+  border-bottom: 0.1px solid #dbe4e3;
+  line-height: normal;
+  color: rgb(87, 83, 83);
+}
+
+.effective-utilization-grid-1 .grid-item-1 .body:last-child {
+ border-bottom: none;
+ height: 62px;
+}
+
+.effective-utilization-grid-1 .grid-item-1 .content {
+  display: inline-block;
+}
+
+.effective-utilization-grid-common {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 0.1px solid #f0f5f4;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 26px;
+  color: rgb(87, 83, 83);
+  font-weight: 600;
+}
+
+.effective-utilization-grid-common .header {
+  height: 50px;
+  margin-top: 20px;
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 0.1px solid #f0f5f4;
+  font-weight: bold;
+  color: rgb(3, 2, 2);
+  font-size: 26px;
+  line-height: 1.0;
+}
+
+.effective-utilization-grid-common .grid-item-common {
+  height: 60px; 
+  display: flex; 
+  align-items: center;
+   justify-content: center;
+    padding: 20px;
+     border-bottom: 0.1px solid #f0f5f4; 
+     line-height: 1.5;
+}
+
+.effective-utilization-grid-common .grid-item-common:last-child {
+  border-bottom: none;
+ 
+}
+
+.effective-utilization-grid-common .sub-header {
+  font-size: 20px;
+  color: rgb(133, 127, 127);
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+
