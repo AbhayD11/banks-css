@@ -13,7 +13,7 @@ function drawBalanceDoughnutChart(chartId, percentages, colors) {
       plugins: {
         legend: { display: false }
       },
-      cutout: '80%' 
+      cutout: '60%' 
     };
   
     const canvas = document.getElementById(chartId);
