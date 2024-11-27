@@ -1,0 +1,501 @@
+.bank-list-container  {
+    display: flex;
+    margin-top: 4px;
+  }
+  
+  .bank-container.no-balance {
+    margin-top: 10px;
+  }
+  
+  .bank-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+  margin-right: 13px;
+  }
+  
+  .bank-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .bank-icon.has-balance {
+    margin-top: 7px;
+  }
+  
+  .bank-name {
+  font-weight: 600;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#000000;
+  }
+  
+  .account-number {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#000000;
+  margin-left: 38px;
+    margin-top: -2px;
+    opacity: 0.6;
+  }
+  
+  .bank-balance {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .bank-balance.no-balance {
+    margin-top: 10px;
+  }
+  
+  .balance-date {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+    margin-top: 4px;
+    color:#A7A5A3;
+  }
+  
+  .excess-balance-chart-container {
+    width: 200px; 
+       height: 200px; 
+       position: absolute;
+       right: 3%;
+       top: 54%;
+       transform: translateY(-50%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color:#CACACA66;
+   }
+  
+  .amount-to-keep-in-bank {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 24px 40px 24px;
+  gap: 12px;
+  }
+  
+  .amount-to-keep-left-section {
+  display: flex;
+  align-items: flex-start;
+  }
+  
+  .amount-to-keep-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #CECECE;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  }
+  
+  .amount-to-keep-text {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .amount-to-keep-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  opacity:0.7;
+  }
+  
+  .amount-to-keep-description {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  height: 30px;
+  margin-top: 7px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  opacity:0.6;
+  }
+  
+  .amount-to-keep-right-section{
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#000000;
+  opacity:0.7;
+  }
+  
+  .excess-balance {
+  display: flex;
+  justify-content: space-between;
+  background-color: #DDF4F099;
+  padding: 40px 24px 40px 24px;
+  border-radius: 16px;
+  }
+  
+  .excess-balance-left-section {
+  display: flex;
+  align-items: flex-start;
+  }
+  
+  .excess-balance-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: #3AA99F;
+  }
+  
+  .excess-balance-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  opacity:0.7;
+  }
+  
+  .excess-balance-description {
+  font-family: Inter;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 7px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+  opacity:0.6;
+  }
+  
+  .excess-balance-right-section {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#3AA99F;
+  }
+  
+  .advice-section {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 55px;
+  border: 1px solid #00000014;
+      max-width: 1750px;
+  }
+  
+  .advice-section-icon {
+  width: 55.01px;
+  height: 55.01px;
+  gap: 0px;
+  border: 0.86px 0px 0px 0px;
+  opacity: 0px;
+  background: var(--Sea-Green-Sea-Green-200, #ABE4DA);
+  border: 0.86px solid var(--Borders-Border-2, #1D1B1814);
+  border-radius: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 27px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: var(--Sea-Green-Sea-Green-600, #277A74);
+  
+  }
+  
+  .advice-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1D1B18;
+  height: 28px;
+  }
+  
+  .advice-section-description {
+  font-family: Inter;
+  font-size: 15.47px;
+  font-weight: 500;
+  line-height: 20.63px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color:#5C5A58;
+  height: 21px;
+  margin-top:3px;
+  }
+  
+  
+  .effective-utilization-bank-balance-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .effective-utilization-title {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: black;
+  }
+  
+  .effective-utilization-description {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+    color: #727272;
+    margin-top: 20px;
+  }
+  
+  .effective-utilization-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+    background-color: white;
+    margin-top: 30px;
+  width: 1840px;
+       margin-left: -60px;
+  }
+  
+  .effective-utilization-grid .grid-item-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    margin-top: 133px;
+    margin-right: -40px;
+    overflow: hidden;
+    border-right: none;
+    font-size: 24px;
+  width: 420px;
+      margin-left: 50px;
+  }
+  
+  .effective-utilization-grid .grid-item-1 .header {
+  font-size:20px;
+    height: 60px;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 0.1px solid #f0f5f4;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.5;
+  }
+  
+  .effective-utilization-grid .grid-item-1 .subtext {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #808080;
+  margin-top: 5px;
+  }
+  
+  .effective-utilization-grid .grid-item-1 .body {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 0.1px solid #dbe4e3;
+    line-height: normal;
+    color: #000000;
+  }
+  
+  .effective-utilization-grid .grid-item-1 .body:last-child {
+   border-bottom: none;
+   height: 62px;
+  }
+  
+  .effective-utilization-grid .grid-item-1 .content {
+    display: inline-block;
+  }
+  
+  .effective-utilization-grid-common {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0.1px solid #f0f5f4;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 26px;
+    color: rgb(87, 83, 83);
+    font-weight: 600;
+  }
+  
+  .effective-utilization-grid-common .header {
+    height: 50px;
+    margin-top: 20px;
+    display: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 0.1px solid #f0f5f4;
+    font-weight: bold;
+    color: rgb(3, 2, 2);
+    font-size: 26px;
+    line-height: 16px;
+  }
+  
+  .effective-utilization-grid-common .grid-item-common {
+    height: 60px; 
+    display: flex; 
+    align-items: center;
+     justify-content: center;
+      padding: 20px;
+       border-bottom: 1px solid #F3F2FF; 
+  
+       font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+  }
+  
+  .effective-utilization-grid-common .grid-item-common:last-child {
+    border-bottom: none;
+   
+  }
+  
+  .effective-utilization-grid-common .sub-header {
+    font-size: 20px;
+    color: rgb(133, 127, 127);
+      line-height: 44px;
+    font-weight: 400;
+  }
+  
+  .bank-balance-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      color: #000000;
+      height:0px;
+  }
+  
+  .bank-balance-card .desc {
+      font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  opacity:0.7;
+  }
+  
+  .bank-balance-card .number {
+      color: #000000;
+      font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  }
+  
+  .sub-card.bo-number {
+  border: 1px solid #00000014;
+  }
+  
+  .sub-card.banks-recommendation-card {
+  position: relative;
+  border: 1px solid #00000014; 
+  padding-bottom: 60px;
+  }
+  
+  .banks-recommendation-card .card-title{
+  padding: 12px 10px; 
+  font-size: 20px; 
+  font-weight: 600; 
+  color: #000000;
+  }
+  
+  .wide-balance-card {
+      width: 562px;
+  }
+  .default-balance-card {
+      width: auto;
+  }
+  
+  .color-wide-card {
+  width: 562px; 
+  background-color: #faf6f6; 
+  color: #ee6868;
+  }
